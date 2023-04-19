@@ -1,0 +1,25 @@
+--kernel
+out/target/product/pinephone/kernel
+--ramdisk
+out/target/product/pinephone/ramdisk.img
+--cmdline
+"androidboot.hardware=pinephone buildvariant=userdebug buildvariant=eng"
+--base
+0x40078000
+--pagesize
+4096
+--os_version
+12
+--os_patch_level
+2099-12-31
+--header_version
+2
+--ramdisk_offset
+0x03288000
+--tags_offset
+0xfff88100
+--dtb
+device/pine64/pinephone/prebuilt/dtb.img
+--output
+out/target/product/pinephone/boot.img
+
